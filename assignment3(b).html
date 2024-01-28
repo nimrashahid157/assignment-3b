@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head><title> registration form</title></head>
+<body>
+<h1>STUDENT REGISTRATION FORM</h1>
+<fieldset>
+<form action="submit_registration.php" method="post">
+<h3>Personal information</h3>
+<p>Full Name<b>:</b> 
+    <input type="text" name="Full Name" size="15" maxlength="30"/>
+</p>
+<p>Gender<b>:</b>
+    <input id="female" type="radio" name="gender" value="F">
+    <label for="female"> female</label> 
+    <input id="male" type="radio" name="gender" value="m">    
+<label for="male"> male</label>
+<input id="other" type="radio" name="gender" value="o">
+<label for="other">other</label>
+</p>
+<p><label for="dob">Date of Birth<b>:</b></label>
+    <input type="date" id="dob" name="dob">
+</p>
+<P>Nationality<b>:</b>
+<input type="text" maxlength="40">
+</P>
+<p>Address<b>:</b>
+<input type="text area" maxlength="150">
+</p>
+<P>Contact Number<b>:</b> 
+<input type="text" maxlength="11">
+</P>
+<p>Email Address<b>:</b>
+<input type="text" required>
+</p>
+<hr/>
+<h3>Academic Information</h3>
+<p>School/University<b>:</b>
+<input type="text">
+</p>
+<p>Course/Program<b>:</b> 
+<input type="text">    
+</p>
+<p>Year/Grade<b>:</b>
+<input type="text">
+</p>
+<p>Expected Year of Graduation<b>:</b> 
+<input type="text">
+</p> <hr/>
+<h3>Emergency Contact</h3>
+<p>Full Name<b>:</b>
+<input type="text">
+</p>
+<p>Relationship to Student<b>:</b>
+<input type="text">
+</p>
+<p>Contact Number<b>:</b>
+<input type="text">
+</p>
+<hr/>
+<p><b>What did you think of this course?</b></p>
+ <textarea name="comments" cols="20" rows="4">write
+ your comments...</textarea>
+ <hr/>
+ <p><b>which course do you like the most?</b>
+<select name="devices">
+<option value="graphicdesigning">graphic designing</option>
+<option value="webdevelopment">web development</option>
+<option value="AI">artificial intelligence</option></p>
+</select>
+<p><b>Which courses you want to apply at once? Select from the options.You can select multiple options by clicking ctrl button.</b></p>
+<select name="courses" size="5" multiple="multiple">
+<option value="graphic designing"> graphic designing</option>
+<option value="web development">web development</option>
+<option value="artificialintelligence">artificial intelligence</option>
+<option value="IT">Information Technology</option>
+<option value="softwaredevelopment">software development</option>
+<option value="Freelancing">Freelancing</option>
+<option value="DigitalMarketing">Digital Marketing</option>
+<option value="VideoEditing">Video Editing</option>
+<option value="SEO">Search Engine Optimization</option>
+<option value="WordPress">WordPress</option>
+</select>
+<p><b>Upload your image:</b></p>
+<input type="file" name="jpg"/><br />
+<input type="submit" value="Upload" /> 
+<hr/>
+<h3>Terms and Conditions</h3>
+      <input type="checkbox" name="terms">
+      I agree to the terms and conditions. 
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+    </fieldset>
+</body>
+</html>
